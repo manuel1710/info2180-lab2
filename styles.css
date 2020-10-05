@@ -1,0 +1,160 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: #2D3748;
+    border: 19px solid #63B3ED;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+}
+
+main{
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+}
+
+aside{
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+    padding-left: 50px;
+    padding-right: 50px;
+    float:right;
+    
+}
+
+footer{
+    background-color:  #2C5282 ;
+    color: #FFFFFF;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    font-size: 36px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+article h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+article i{
+    color: #718096;
+}
+
+aside h3{
+    font-family:  Georgia,'Times New Roman', Times, serif;
+}
+
+.about{
+    background-color: #E2E8F0;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.about h3{
+    color:#000000;
+}
+
+.social h3{
+    color:  #48BB78;
+}
+
+.social a{
+    color: #4299E1;
+}
+
+.archives a{
+    color: #4299E1;
+}
+
+.archives h3{
+    color:  #48BB78;
+}
+
+
+img{
+    width:200px;
+    height:200px;
+    border: 2px solid green;
+    border-radius: 90%;
+}
+
+.header{ 
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+	padding: 25px;
+	padding-left: 150px;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas:
+     "header"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+@media (min-width: 500px) {
+    .container {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-areas: 
+          "header  header  header  header  header"
+          "main main main main sidebar"
+          "footer footer footer footer footer";
+    }
+}
+
+.float1{
+    float:right;
+	height:200px;
+	width:200px;
+    margin: 15px;
+    border: 2px solid rgb(193, 231, 23);
+    border-radius: initial;
+}
+
+.float2{
+    float:left;
+	height:200px;
+	width:200px;
+    margin: 15px;
+    border: 2px solid rgb(7, 6, 88);
+    border-radius: initial;
+}
+
+a,li{
+    text-decoration:none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+hr{
+    padding-top: 2px;
+    background-color: black;
+}
